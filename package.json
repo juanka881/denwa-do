@@ -1,0 +1,22 @@
+{
+  "name": "@denwa/do",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "tsc",
+    "pretest": "yarn build",
+    "test": "mocha dist/test/**/*.js",
+    "start": "node dist/src/main.js",
+    "prestart": "yarn build"
+  },
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.0.2",
+    "mocha": "^8.4.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
+  }
+}
