@@ -1,8 +1,9 @@
 {
   "name": "@denwa/do",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "license": "MIT",
+  "keywords": ["make", "jake", "grunt", "gulp", "tasks", "task", "automation", "tool", "scripts", "package.json"],
   "scripts": {
     "clean": "rimraf ./dist",
     "build": "tsc && cp -v package.json dist/src",
