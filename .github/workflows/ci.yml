@@ -36,6 +36,9 @@ jobs:
         
     - name: Run Tests
       run: npm run test
+
+    - name: Copy README for npm
+      run: cp -v README.md /dist/src
       
     - name: Publish Package
       uses: JS-DevTools/npm-publish@v1
