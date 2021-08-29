@@ -4,6 +4,7 @@
 		"incremental": true,
 		"noEmitOnError": true,
 		"sourceMap": true,
+		"declaration": true,
 		"lib": ["es2020"],
 		"module": "commonjs",
 		"target": "es2020",

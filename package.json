@@ -1,6 +1,6 @@
 {
   "name": "@denwa/do",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "index.js",
   "license": "MIT",
   "keywords": ["make", "jake", "grunt", "gulp", "tasks", "task", "automation", "tool", "scripts", "package.json"],
