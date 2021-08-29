@@ -52,10 +52,10 @@ export async function invoke(name: string, args?: minimist.ParsedArgs): Promise<
 export async function execute(args?: string[]): Promise<number> {
     if(args === undefined) {
         const args = process.argv.slice(2);
-        execute(args).then(code => process.exit(code));
+        return execute(args).then(code => process.exit(code));
     }
 
-    if(Object.keys(taskRegistry).length === 0) {
+    if(taskRegistry.size === 0) {
         console.log('no tasks registered');
         return 1;
     }
